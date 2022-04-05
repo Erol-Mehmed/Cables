@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="cables.css" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cables</title>
+  </head>
+  <body>
+    <h1 id="header">
+      We have cables hanging from the ceiling. We must trim them!
+    </h1>
+
+    <center>
+      <p id="information">
+        The trimming is done with the size of the smallest cable of them all. We
+        trim all the cables with its size and itself to.
+      </p>
+    </center>
+
+    <form
+      id="cables"
+      align="center"
+      onkeydown="return event.key != 'Enter';"
+      onsubmit="event.preventDefault()"
+    >
+      <input
+        type="text"
+        id="input"
+        placeholder="Give me hanging cables!"
+        required
+      /><br />
+
+      <button type="submit" id="submit">Submit</button>
+    </form>
+
+    <center><p id="output"></p></center>
+
+    <script src="cables.js"></script>
+  </body>
+</html>
