@@ -1,4 +1,4 @@
-function htmInput() {
+function htmlInput() {
   // This function takes the user input.
 
   let inputArray = document.getElementById("input").value;
@@ -91,7 +91,7 @@ let submitElement = document.getElementById("submit");
 submitElement.addEventListener("click", (e) => {
   e.preventDefault();
 
-  htmInput();
+  htmlInput();
 
   document.getElementById("cables").reset();
 });
